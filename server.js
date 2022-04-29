@@ -17,10 +17,6 @@ app.use(express.urlencoded({ extended: true }));
 app.use(express.static('public'));
 
 
-
-
-
-
 app.post('/api/notes',(req,res)=>{
     console.info("${req.method} request recieved to add a note");
     const { title , text } = req.body;
@@ -32,7 +28,7 @@ app.post('/api/notes',(req,res)=>{
         const reviewNote = JSON.stringify(newNote);
 
         fs.writeFile("./db/db.json",reviewNote, (err)=>
-        err ? console.error(err) : console.log("Review for ${newNote} has been written to JSON file")
+        err ? console.error(err) : console.log("Note has been written to JSON file")
         );
 
     const response ={
@@ -69,8 +65,6 @@ app.post('/api/notes', (req, res) => {
     res.json('Notes not found');
     }
 });
-
-
 
 
 
