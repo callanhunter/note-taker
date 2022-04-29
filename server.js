@@ -30,13 +30,13 @@ app.post('/api/notes',(req,res)=>{
         fs.writeFile("./db/db.json",reviewNote, (err)=>
         err ? console.error(err) : console.log("Note has been written to JSON file")
         );
-
     const response ={
         status: 'success',
         body: newNote,
     };
     console.log(response);
     res.json(response)
+    reviewNote.push({title , text});
     } else {
         res.json('error in posting note');
     }
@@ -58,7 +58,7 @@ app.post('/api/notes', (req, res) => {
         for (let i = 0; i < notes.length; i++) {
             const currentNote = notes[i];
             if (currentNote.note_id === notesId) {
-                res.json(`New note is: ${currentNode}`);
+                res.json(`New note is: ${currentNote}`);
                 return;
         }
     }

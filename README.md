@@ -4,27 +4,21 @@
 
 # Description
 
-###
+### In this project, you will be able to take and save note. This was created by using Express.js to retrieve and append the users input and displaying it on the front end. Simply click on the text box and enter some text, then press the add button then your text will appear on the left.
 
 # Table of contents
 
 - [Installation](#installation)
-- [Usage](#usage)
 - [Languages Used](#languages-used)
 - [Credits](#credits)
-- [Questions](#questions)
 
 # Installation
 
-### installing jest is required for this project
-
-# Usage
-
-### Link to video walkthrough:
+### install npm is required
 
 # Languages Used
 
-### Express.js, CSS, HTML
+### Express.js, Node.js, JavaScript, HTML, CSS
 
 # Credits
 
